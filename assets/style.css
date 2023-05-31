@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@1,900&family=Oswald:wght@200;300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400;1,500;1,600&family=Roboto:ital,wght@1,900&display=swap');
+
+
+
+*{
+    font-family: 'Playfair Display', serif;
+    box-sizing: border-box;    
+}
+
+
+body{
+    background: #E2E2E2;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+
+/* form */
+form{
+    width: 500px;
+    border: 2px solid #ccc;
+    padding: 30px;
+    background: #fff;
+    border-radius: 20px;
+}
+/* form */
+
+/* h2 */
+h2{
+    text-align: center;
+    margin-bottom: 35px;
+}
+/* h2 */
+
+/* input */
+input{
+    display: block;
+    width: 95%;
+    padding: 10px;
+    margin: 10px auto;
+    border: 2px solid #ccc;
+    outline: none;
+    border-radius: 15px;
+}
+/* input */
+
+
+/* label */
+label{
+    color: #888;
+    font-size: 20px;
+    padding: 10px;
+}
+/* label */
+
+
+/* button */
+.btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+button{
+    padding: 10px 10px;
+    font-size: 0.9rem;
+    border-radius: 15px;
+    outline: none;
+    font-weight: 600;
+    background: rgb(66, 186, 134);
+    color: #fff;
+    border: none;
+}
+
+button:hover{
+    background: #81d8e8;
+    color:  rgb(39, 34, 77);
+    transition: 0.2s;
+    transform: scale(1.2);
+    font-weight: 700;
+}
+/* button */
+

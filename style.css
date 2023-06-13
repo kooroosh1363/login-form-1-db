@@ -1,3 +1,12 @@
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Quicksand&display=swap');
+
+*{
+	font-family: 'Quicksand', sans-serif;
+	box-sizing: border-box;
+}
+
+
 body {
 	background: #5b5e5e;
 	display: flex;
@@ -5,27 +14,29 @@ body {
 	align-items: center;
 	height: 100vh;
 	flex-direction: column;
-	background: url();
+	overflow: hidden;
+	background: url(./assets/image/dd.jpg);
     background-position: center;
     background-size: cover;
 }
 
-*{
-	font-family: sans-serif;
-	box-sizing: border-box;
-}
+
 
 form {
 	width: 500px;
 	border: 2px solid #ccc;
 	padding: 30px;
-	background: #fff;
+	background: transparent;
 	border-radius: 15px;
+	backdrop-filter: blur(4px);
 }
 
 h2 {
 	text-align: center;
 	margin-bottom: 40px;
+	color: #fff;
+	font-size: 40px;
+	font-weight: 800;
 }
 
 input {

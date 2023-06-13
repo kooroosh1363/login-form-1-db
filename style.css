@@ -46,9 +46,10 @@ input {
 	padding: 10px;
 	margin: 10px auto;
 	border-radius: 5px;
+	background: #e9e0e0;
 }
 label {
-	color: #888;
+	color: #efefef;
 	font-size: 18px;
 	padding: 10px;
 }

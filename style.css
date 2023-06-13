@@ -1,69 +1,45 @@
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@1,900&family=Oswald:wght@200;300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400;1,500;1,600&family=Roboto:ital,wght@1,900&display=swap');
-
-
+body {
+	background: #5b5e5e;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	flex-direction: column;
+	background: url();
+    background-position: center;
+    background-size: cover;
+}
 
 *{
-    font-family: 'Playfair Display', serif;
-    box-sizing: border-box;    
+	font-family: sans-serif;
+	box-sizing: border-box;
 }
 
-
-body{
-    background: #6a6868 !important;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
+form {
+	width: 500px;
+	border: 2px solid #ccc;
+	padding: 30px;
+	background: #fff;
+	border-radius: 15px;
 }
 
-
-/* form */
-form{
-    width: 500px;
-    border: 2px solid #ccc;
-    padding: 30px;
-    background: #fff;
-    border-radius: 20px;
+h2 {
+	text-align: center;
+	margin-bottom: 40px;
 }
-/* form */
 
-/* h2 */
-h2{
-    text-align: center;
-    margin-bottom: 35px;
+input {
+	display: block;
+	border: 2px solid #ccc;
+	width: 95%;
+	padding: 10px;
+	margin: 10px auto;
+	border-radius: 5px;
 }
-/* h2 */
-
-/* input */
-input{
-    display: block;
-    width: 95%;
-    padding: 10px;
-    margin: 10px auto;
-    border: 2px solid #ccc;
-    outline: none;
-    border-radius: 15px;
-}
-/* input */
-
-
-/* label */
-label{
-    color: #888;
-    font-size: 20px;
-    padding: 10px;
-}
-/* label */
-
-
-/* button */
-.btn{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 20px;
+label {
+	color: #888;
+	font-size: 18px;
+	padding: 10px;
 }
 
 button{
@@ -84,5 +60,30 @@ button:hover{
     transform: scale(1.2);
     font-weight: 700;
 }
-/* button */
+.error {
+   background: #F2DEDE;
+   color: #A94442;
+   padding: 10px;
+   width: 95%;
+   border-radius: 5px;
+   margin: 20px auto;
+}
 
+h1 {
+	text-align: center;
+	color: #fff;
+}
+
+a {
+	float: right;
+	background: #555;
+	padding: 10px 15px;
+	color: #fff;
+	border-radius: 5px;
+	margin-right: 10px;
+	border: none;
+	text-decoration: none;
+}
+a:hover{
+	opacity: .7;
+}

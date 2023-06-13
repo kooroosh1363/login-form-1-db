@@ -1,27 +1,24 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./style.css">
-    <title>login-form</title>
+	<title>LOGIN</title>
+	<link rel="stylesheet" href="./style.css?php echo time(); ?>">
+
+
 </head>
-
 <body>
-    <form action="login.php" method="POST">
-        <h2>LOGIN</h2>
-        <label for="">User Name</label>
-        <input type="text" name="u-name" placeholder="User Name">
+     <form action="login.php" method="post">
+     	<h2>LOGIN</h2>
+     	<?php if (isset($_GET['error'])) { ?>
+     		<p class="error"><?php echo $_GET['error']; ?></p>
+     	<?php } ?>
+     	<label>User Name</label>
+     	<input type="text" name="uname" placeholder="User Name"><br>
 
-        <label for="">Password</label>
-        <input type="password" name="pass" placeholder="Password">
+     	<label>User Name</label>
+     	<input type="password" name="password" placeholder="Password"><br>
 
-        <div class="btn">
-            <button type="submit">Login</button>
-        </div>
-    </form>
+     	<button type="submit">Login</button>
+     </form>
 </body>
-
 </html>

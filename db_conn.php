@@ -1,13 +1,8 @@
 <?php
 
-$sname= "localhost";
-$unmae= "root";
-$password = "";
+declare(strict_types=1);
 
-$db_name = "login-form-1";
+require_once __DIR__ . '/src/bootstrap.php';
 
-$conn = mysqli_connect($sname, $unmae, $password, $db_name);
-
-if (!$conn) {
-	echo "Connection failed!";
-}
+// Legacy compatibility alias for older code that expected a connection variable.
+$conn = $pdo;
